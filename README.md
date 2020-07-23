@@ -10,12 +10,12 @@ The CT PPP Project studies the Payment Protection Program (PPP) in Connecticut. 
 ## Data
 
 The data directory includes clean versions of the SBA-released datasets for loan
-approvals thoough June 30, 2020. The SBA FOIA releases are also in the directory for reference. The new versions are in both JSON and CSV, and
+approvals through June 30, 2020. The SBA FOIA releases are also in the directory for reference. The new versions are in both JSON and CSV, and
 include a composite dataset aggregating the \>$150K and \<$150K data. The differences between the two \>$150K and \<$150K datasets are: 1) the larger loans include both business names and addresses; and 2) larger loans do not provide exact dollar amounts but instead give dollar ranges.
 
 Differences between the clean data and the original SBA data can be seen through the
 JSON and CSV files in the audit directory. These files list the observations that have
-been changed. To faciliate identification and comparison, a LoanID field was in the clean datasets
+been changed. To faciliate identification and comparison, a LoanID field was added to the clean datasets
 using the indices in the original SBA datasets, prepended by the data tranche date 
 and a two-letter indicator of the original SBA file.
 
@@ -36,7 +36,7 @@ ease of analysis and to illustrate aggregate dollar amounts. The point estimates
 taking the same % of each interval for each of the loan ranges, such that the total loan amount
 would equal the total amount reported by the SBA for Connecticut (after accounting for any deletions
 made above). This percentage was computed to be 35.425%, and the resulting point estimates for
-each of larger loan sizes is: $6,771,250 ($5M-$10M), $3,062,750 ($2M-$5M), $1,354,250 ($1M-
+each of larger loan sizes were: $6,771,250 ($5M-$10M), $3,062,750 ($2M-$5M), $1,354,250 ($1M-
 $2M), $580,262 ($350K-$1M), and $220,850 ($150K-$350K).
 
 ## Notebooks
@@ -46,7 +46,7 @@ They can be run locally with a standard data science environment or by using Goo
 Colab. The notebooks assume the input files are in the current working directory.
 Some geographic files needed to plot maps are found in the misc directory.
 
-These notebooks give example code for loading data from the \>$150K, \<$150K, and composite json files for analysis; plotting graphs that illustrate static and dynamic variables in the CT PPP data; and creating maps that contain zip code-level information for Connecticut.
+These notebooks give example code for loading data from the \>$150K, \<$150K, and composite JSON files for analysis; plotting graphs that illustrate static and dynamic variables in the CT PPP data; and creating maps that contain zip code-level information for Connecticut.
 
 ## Support
 
